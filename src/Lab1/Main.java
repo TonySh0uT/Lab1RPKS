@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +16,7 @@ public class Main {
 
 
 
-        try (FileReader reader = new FileReader("src/template.txt"))                //Reading Template;
+        try (FileReader reader = new FileReader("src/Lab1/template.txt"))                //Reading Template;
         {
             Scanner scan = new Scanner(reader);
             String SBuf = new String();
@@ -50,7 +52,7 @@ public class Main {
             scan.close();
             reader.close();
 
-            try (FileReader readerText = new FileReader("src/text.txt")){
+            try (FileReader readerText = new FileReader("src/Lab1/text.txt")){
                 Scanner scanText = new Scanner(readerText);
                 SBuf = new String();
                 while (scanText.hasNext()) {
